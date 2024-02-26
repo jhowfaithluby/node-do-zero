@@ -1,0 +1,32 @@
+POST http://localhost:3333/videos
+Content-Type: application/json
+
+{
+    "title": "video node",
+    "description": "DWW",
+    "duration": 100
+}
+
+###
+
+GET  http://localhost:3333/videos?search=node
+
+###
+
+GET  http://localhost:3333/videos
+
+###
+
+PUT http://localhost:3333/videos/e73e7bdb-e1eb-4ca0-8e76-52d0a99cde39
+Content-Type: application/json
+
+{
+    "title": "video 06 upd",
+    "description": "DWW",
+    "duration": 100
+}
+
+###
+
+DELETE  http://localhost:3333/videos/e73e7bdb-e1eb-4ca0-8e76-52d0a99cde39
+
